@@ -10,7 +10,7 @@ def play_game():
     game.load_board()
     game.print()
 
-    while not game.win:
+    while not game.winner:
         player = "player1"
         direction = input(f"{player}, enter your move (up, down, left, right): ").strip().lower()
         game.move_player(player, direction)
